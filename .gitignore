@@ -6,3 +6,5 @@
 .DS_Store
 build/
 .mypy_cache
+.vscode/launch.json
+.vscode/settings.json

@@ -249,7 +249,7 @@ class Builder(object):
     @_once
     def ipynb(self):
         self.eval()
-        run_cmd(['rm -rf', self.config.ipynb_dir, '; cp -r ',
+        run_cmd(['del -rf', self.config.ipynb_dir, '; cp -r ',
                  self.config.eval_dir, self.config.ipynb_dir])
         update_ipynb_toc(self.config.ipynb_dir)
 
